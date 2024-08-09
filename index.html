@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Book Your Tickets</h1>
+    <div class="container">
+      <form for="listOfTickets" class="selectedTicket">
+        <label for="listOfTickets">List Of Tickets</label>
+        <select name="options" id="listOfTickets" class="listOfTickets">
+          <option value="500">Praha 500 Kč</option>
+          <option value="3000">Frankfurt 3000 Kč</option>
+          <option value="15000">New York 15000 Kč</option>
+          <option value="30000">Sydney 30000 Kč</option>
+        </select>
+      </form>
+      <form for="numberOfTickets" class="selectedNumberOfTicket">
+        <label for="numberOfTickets">Number of Tickets</label>
+        <select name="options" id="numberOfTickets" class="numberOfTickets">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </form>
+      <label for="zpatecni"
+        ><input type="checkbox" id="zpatecni" class="zpatecni" />Roud-trip
+        ticket</label
+      >
+    </div>
+    <div class="container">
+      <fieldset class="selectedClass">
+        <legend>Select a class</legend>
+        <div>
+          <input
+            type="radio"
+            id="economy"
+            value="economy"
+            name="class"
+            checked
+          />
+          <label for="economy">Economy</label>
+        </div>
+        <div>
+          <input type="radio" id="bussiness" value="bussiness" name="class" />
+          <label for="bussiness">Bussiness</label>
+        </div>
+        <div>
+          <input type="radio" id="royal" value="royal" name="class" />
+          <label for="royal">Royal</label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="container">
+      <p class="totalPrice">Total price: 500 Kč</p>
+      <label for="yourAmountOfMoney" id="yourAmountOfMoney"
+        >Your amount of money:</label
+      >
+      <input
+        type="number"
+        name=""
+        id="myAmountOfMoney"
+        class="myAmountOfMoney"
+      />
+      <button class="checkMoney">Check</button>
+    </div>
+    <div class="container">
+      <p class="textForAvailability"></p>
+    </div>
+    <div class="container">
+      <label for="poznamka">Poznamka:</label>
+      <textarea
+        class="poznamka"
+        name="poznamka"
+        id="poznamka"
+        cols="40"
+        rows="10"
+      ></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
